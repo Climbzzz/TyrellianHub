@@ -205,6 +205,8 @@ footer {
     nav { padding: 14px 20px; }
     nav ul { flex-wrap: wrap; gap: 2px; }
     nav a { padding: 8px 9px; font-size: 0.8rem; }
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content { display: none; }
     .dropdown-content { position: fixed; top: 92px; left: 20px; }
     header, main { width: min(100% - 32px, 1120px); }
     .responsive-img { max-width: 100% !important; }
