@@ -229,6 +229,8 @@ footer {
     .dropdown:focus-within .dropdown-content { display: none; }
     .dropdown.is-open .dropdown-content { display: block; }
     .dropdown-content { position: fixed; top: 92px; left: 20px; }
+    .dropdown-content::before,
+    .dropdown-content::after { display: none; }
     header, main { width: min(100% - 32px, 1120px); }
     .responsive-img { max-width: 100% !important; }
     header { min-height: 270px; padding-top: 55px; }
