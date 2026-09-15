@@ -106,29 +106,9 @@ nav > ul > li > .dropdown-toggle:focus-visible {
     background: rgba(16, 29, 36, 0.97);
     box-shadow: var(--shadow);
 }
-.dropdown-content::after {
-    position: absolute;
-    top: -10px;
-    right: 0;
-    left: 0;
-    height: 10px;
-    content: '';
-}
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content,
 .dropdown.is-open .dropdown-content { display: block; animation: dropIn 500ms ease both; }
-.dropdown-content::before {
-    position: absolute;
-    top: -6px;
-    left: 22px;
-    width: 10px;
-    height: 10px;
-    border-top: 1px solid var(--line);
-    border-left: 1px solid var(--line);
-    background: rgba(16, 29, 36, 0.97);
-    content: '';
-    transform: rotate(45deg);
-}
 .dropdown-content li a { padding: 10px 12px; color: var(--muted); }
 .dropdown-content li a:hover,
 .dropdown-content li a:focus-visible { color: var(--cyan); background: rgba(115, 242, 222, 0.08); }
@@ -229,8 +209,6 @@ footer {
     .dropdown:focus-within .dropdown-content { display: none; }
     .dropdown.is-open .dropdown-content { display: block; }
     .dropdown-content { position: fixed; top: 92px; left: 20px; }
-    .dropdown-content::before,
-    .dropdown-content::after { display: none; }
     header, main { width: min(100% - 32px, 1120px); }
     .responsive-img { max-width: 100% !important; }
     header { min-height: 270px; padding-top: 55px; }
