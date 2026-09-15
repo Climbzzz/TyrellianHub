@@ -91,7 +91,7 @@ nav > ul > li > .dropdown-toggle:focus-visible {
 }
 .dropdown-content {
     position: absolute;
-    top: calc(100% + 10px);
+    top: 100%;
     left: 0;
     display: none;
     min-width: 190px;
